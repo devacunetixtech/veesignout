@@ -52,7 +52,7 @@
         /* Hero Section */
         .hero {
             background-color: var(--lavender-soft);
-            min-height: 100vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -81,13 +81,14 @@
             display: flex;
             gap: 2rem;
             justify-content: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             max-width: 1000px;
+            width: 100%;
         }
 
         .hero-img-wrapper {
             position: relative;
-            width: 100%;
+            flex: 1;
             max-width: 350px;
             aspect-ratio: 4/5;
         }
@@ -143,7 +144,7 @@
 
         .letter-greeting {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--purple-deep);
             margin-bottom: 2rem;
         }
@@ -209,7 +210,7 @@
         /* Closing Section */
         .closing {
             background-color: var(--lavender-soft);
-            padding: 8rem 2rem;
+            padding: 4rem 1rem;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -242,6 +243,9 @@
             }
             .hero {
                 padding: 3rem 1.5rem;
+            }
+            .hero-images {
+                gap: 1rem;
             }
         }
     </style>
